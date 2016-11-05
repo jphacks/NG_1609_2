@@ -1,8 +1,6 @@
 module Api
   class RoutesController < ApplicationController
-    skip_before_action :verify_authenticity_token
     before_action :setup_google_map_api, only: [:get_routes]
-    # before_action :json_request, only:[:get_routes]
 
     def setup_google_map_api
       # Setup global parameters
@@ -17,23 +15,24 @@ module Api
     end
 
     def get_routes
-      json_request = JSON.parse(request.body.read)
-
-      if !json_request.blank?
-        personal = json_request
-      else
-        personal = {'status' => 500}
+      json = json_request
+      geo_list = json.dig(0, :geoList)
+      routes = []
+      geo_list.each_cons(2) do |start_location, end_location|
+        route = @gmaps.directions(
+            [start_location[:lat], start_location[:lng]],
+            [end_location[:lat], end_location[:lng]],
+            mode: 'walking',
+            alternatives: false)
+        routes.append(route)
       end
 
-      p personal
-
-      routes = @gmaps.directions(
-          [34.994856, 135.785046],
-          [35.03937, 135.729243],
-          mode: 'walking',
-          alternatives: false)
-
       render json: routes
+    end
+
+    private
+    def json_request
+      JSON.parse(request.body.read, {:symbolize_names => true})
     end
   end
 end
