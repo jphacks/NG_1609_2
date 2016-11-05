@@ -14,6 +14,7 @@ module Api
       @gmaps = GoogleMapsService::Client.new
     end
 
+    # POST /getRoutes
     def get_routes
       json = json_request
       geo_list = json.dig(0, :geoList)
