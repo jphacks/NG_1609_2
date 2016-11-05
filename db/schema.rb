@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20161105091846) do
     t.decimal  "longitude",                  precision: 9, scale: 6,              null: false
     t.text     "description",  limit: 65535,                                      null: false
     t.string   "imageUrl",                                           default: "", null: false
-    t.string   "kind",                                                            null: false
     t.float    "requiredTime", limit: 24,                                         null: false
     t.datetime "created_at",                                                      null: false
     t.datetime "updated_at",                                                      null: false

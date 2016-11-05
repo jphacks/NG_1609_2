@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # 追加Gem
 gem 'google_maps_service'
 gem 'geocoder'
-
+gem 'microsoft_translator'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
