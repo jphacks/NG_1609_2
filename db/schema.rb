@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20161105091846) do
   create_table "locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                                                            null: false
     t.integer  "region_id",                                                       null: false
+    t.string   "address",                                            default: ""
     t.decimal  "latitude",                   precision: 9, scale: 6,              null: false
     t.decimal  "longitude",                  precision: 9, scale: 6,              null: false
     t.text     "description",  limit: 65535,                                      null: false

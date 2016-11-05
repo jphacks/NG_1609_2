@@ -16,6 +16,14 @@ module Api
       render json: @locations
     end
 
+    # GET /nearby_locations
+    def nearby_locations
+      @locations = Location.near([params[:lat], params[:lng]], 50, order: 'distance').to_a
+      @locations.shift
+
+      render json: @locations
+    end
+
     # POST /locations
     def create
       @location = Location.new(location_params)
