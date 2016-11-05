@@ -13,8 +13,15 @@
 ActiveRecord::Schema.define(version: 20161104134212) do
 
   create_table "locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name",                                                            null: false
+    t.decimal  "latitude",                   precision: 9, scale: 6,              null: false
+    t.decimal  "longitude",                  precision: 9, scale: 6,              null: false
+    t.text     "description",  limit: 65535,                                      null: false
+    t.string   "imageUrl",                                           default: "", null: false
+    t.string   "kind",                                                            null: false
+    t.float    "requiredTime", limit: 24,                                         null: false
+    t.datetime "created_at",                                                      null: false
+    t.datetime "updated_at",                                                      null: false
   end
 
 end
