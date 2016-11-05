@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  resources :locations
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    resources :regions, only: [:index]
+    resources :locations
+    post 'getRoutes', to: 'routes#get_routes'
+  end
 end
