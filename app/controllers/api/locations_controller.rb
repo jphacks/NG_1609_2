@@ -1,6 +1,6 @@
 module Api
   class LocationsController < ApplicationController
-    before_action :set_location, only: [:show, :update, :destroy]
+    before_action :set_location, only: [:update, :destroy]
 
     # GET /locations
     def index
@@ -9,9 +9,11 @@ module Api
       render json: @locations
     end
 
-    # GET /locations/1
-    def show
-      render json: @location
+    # GET /region_locations
+    def region_locations
+      @locations = Location.where(region_id: params[:region_id])
+
+      render json: @locations
     end
 
     # POST /locations
