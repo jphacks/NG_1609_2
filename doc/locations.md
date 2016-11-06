@@ -16,41 +16,41 @@ Host: www.example.com
 ```
 HTTP/1.1 200
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 1835
+Content-Length: 1531
 Content-Type: application/json; charset=utf-8
-ETag: W/"78cac5bb3f9bdf328cec39f5adb2de22"
+ETag: W/"47d2cc5f0d96105a8c4ffaef121dc8e3"
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: a5c008fc-f589-4738-bec9-70b181830a15
-X-Runtime: 0.001751
+X-Request-Id: 2643304c-3e2e-4397-8ac9-e1b175abd5aa
+X-Runtime: 0.001933
 X-XSS-Protection: 1; mode=block
 
 [
   {
     "id": 1,
-    "name": "京都タワー",
+    "name": "Kyoto Tower",
     "region_id": 1,
     "address": "721 Higashishiokōjichō, Shimogyō-ku, Kyōto-shi, Kyōto-fu 600-8216, Japan",
     "latitude": "34.987563",
     "longitude": "135.759344",
-    "description": "京都駅から出たら、道を挟んで目の前にあるのが大きくそびえる京都タワーです。京都タワーは京都のシンボルとして街を京都市街から山々の風景まで一望できるようになっています。京都に来たんだ！と実感するためにも景色を見渡せる最上階まで行くのがおすすめです♪ ",
+    "description": "This is the Tower big comes from Kyoto station, the road is in front of the tower. Kyoto Tower as a symbol of Kyoto from Kyoto City mountain landscapes panoramic city views as it is. I've come to Kyoto! We recommend going to the top floor overlooking the landscape in order to tell you that!",
     "imageUrl": "http://photo53.com/img/tower1.jpg",
     "requiredTime": 1.0,
-    "created_at": "2016-11-06T03:16:05.000Z",
-    "updated_at": "2016-11-06T03:16:05.000Z"
+    "created_at": "2016-11-06T05:29:10.000Z",
+    "updated_at": "2016-11-06T05:29:10.000Z"
   },
   {
     "id": 2,
-    "name": "東京スカイツリー",
+    "name": "Tokyo sky tree",
     "region_id": 2,
     "address": "Japan, 〒121-0062 Tōkyō-to, Adachi-ku, Minamihanahata, 2 Chome−24−11, マーキュリー兼六",
     "latitude": "35.789966",
     "longitude": "139.821961",
-    "description": "東京に行ったならば、ぜひ押さえていただきたいのが「東京スカイツリー」です。周辺には観光スポットも多数あるので、短期間の東京観光の際にもオススメです。高さ634メートルからの景色は絶景！一生に一度の想い出が作れること間違いなしです。  日中、気の合う友だちと観光に行くのもいいけれど、夜に特別な日のデートで使うのもピッタリです。天望デッキ・天望回廊への入場に、天望デッキにあるカフェでの軽食・スパークリングワインや記念写真などがついた「ナイトビューペアチケット」の利用もお勧めですよ♪ ",
+    "description": "\"Tokyo sky tree\" is like if I went to Tokyo, take a look at for holding. There are many tourist attractions in the area, so is recommended to sightsee in a short period of time. Height's spectacular views of 634 metres!  Make memories of a lifetime. Go sightseeing with friends during the day, congenial, but use on a date night special day is perfect. Night view per ticket with snacks at the entrance to heaven hope deck and Tembo, Tembo deck to cafes, sparkling wine and photo usage is recommended.",
     "imageUrl": "https://i.ytimg.com/vi/lwl7HjTDb68/maxresdefault.jpg",
     "requiredTime": 1.0,
-    "created_at": "2016-11-06T03:16:05.000Z",
-    "updated_at": "2016-11-06T03:16:05.000Z"
+    "created_at": "2016-11-06T05:29:11.000Z",
+    "updated_at": "2016-11-06T05:29:11.000Z"
   }
 ]
 ```
@@ -73,28 +73,28 @@ Host: www.example.com
 ```
 HTTP/1.1 200
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 720
+Content-Length: 637
 Content-Type: application/json; charset=utf-8
-ETag: W/"d429f3d866d0e1f9fa4846feff0febe1"
+ETag: W/"83bd4a2f442a95437e1bc327af87c3c1"
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: 9cf19907-451a-45ba-b682-bce5764f036d
-X-Runtime: 0.001693
+X-Request-Id: 3dbf0c82-f6f8-4d82-8667-a8a6707668d4
+X-Runtime: 0.001918
 X-XSS-Protection: 1; mode=block
 
 [
   {
     "id": 1,
-    "name": "京都タワー",
+    "name": "Kyoto Tower",
     "region_id": 1,
     "address": "721 Higashishiokōjichō, Shimogyō-ku, Kyōto-shi, Kyōto-fu 600-8216, Japan",
     "latitude": "34.987563",
     "longitude": "135.759344",
-    "description": "京都駅から出たら、道を挟んで目の前にあるのが大きくそびえる京都タワーです。京都タワーは京都のシンボルとして街を京都市街から山々の風景まで一望できるようになっています。京都に来たんだ！と実感するためにも景色を見渡せる最上階まで行くのがおすすめです♪ ",
+    "description": "This is the Tower big comes from Kyoto station, the road is in front of the tower. Kyoto Tower as a symbol of Kyoto from Kyoto City mountain landscapes panoramic city views as it is. I've come to Kyoto! We recommend going to the top floor overlooking the landscape in order to tell you that!",
     "imageUrl": "http://photo53.com/img/tower1.jpg",
     "requiredTime": 1.0,
-    "created_at": "2016-11-06T03:16:05.000Z",
-    "updated_at": "2016-11-06T03:16:05.000Z"
+    "created_at": "2016-11-06T05:29:10.000Z",
+    "updated_at": "2016-11-06T05:29:10.000Z"
   }
 ]
 ```
@@ -117,43 +117,43 @@ Host: www.example.com
 ```
 HTTP/1.1 200
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 1597
+Content-Length: 1635
 Content-Type: application/json; charset=utf-8
-ETag: W/"d765106e0ebc4e8af08254a0e35c95a8"
+ETag: W/"8516dc9531eaead1fcc9ffa8a81bfc7a"
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: 6a11ede5-8601-4ce0-b8c6-91ef0d076339
-X-Runtime: 0.002329
+X-Request-Id: 704aa91f-5e27-48b0-840b-18ad600c768d
+X-Runtime: 0.002471
 X-XSS-Protection: 1; mode=block
 
 [
   {
     "id": 3,
-    "name": "清水寺",
+    "name": "Kiyomizu-dera Temple",
     "region_id": 1,
     "address": "Japan, 〒605-0862 Kyōto-fu, Kyōto-shi, Higashiyama-ku, Kiyomizu 1-chōme, 294, 清水寺",
     "latitude": "34.994856",
     "longitude": "135.785046",
-    "description": "京都府京都市東山区清水にある寺院。山号は音羽山。本尊は千手観音、開基（創立者）は延鎮である。もとは法相宗に属したが、現在は独立して北法相宗大本山を名乗る。西国三十三所観音霊場の第16番札所である。",
+    "description": "Temple located in Shimizu Higashiyama-Ku, Kyoto, Kyoto Prefecture. Mountain is Mt, Otowa. Is statue of senjyukannonbosatsu, founder (founders) are rolled in the town. Originally belonged to the hosso sect of Buddhism, but is currently independent North hosso sect claims to be the Chief Temple. In no. 16 Temple of goddess nyorindo.",
     "imageUrl": "http://arounddeglobe.com/wp-content/uploads/2016/04/Kiyomizu-Dera-Kyoto-Japan.jpg",
     "requiredTime": 0.75,
-    "created_at": "2016-11-06T03:16:05.000Z",
-    "updated_at": "2016-11-06T03:16:05.000Z",
+    "created_at": "2016-11-06T05:29:12.000Z",
+    "updated_at": "2016-11-06T05:29:12.000Z",
     "distance": 1.5396304376297265,
     "bearing": 74
   },
   {
     "id": 4,
-    "name": "金閣寺",
+    "name": "Kinkaku-ji",
     "region_id": 1,
     "address": "Japan, 〒603-8361 Kyōto-fu, Kyōto-shi, Kita-ku, Kinkakujichō, 1, 北山鹿苑寺金閣寺",
     "latitude": "35.03937",
     "longitude": "135.729243",
-    "description": "臨済宗相国寺派の寺院で、山号は北山。本尊は聖観世音菩薩 (方丈安置)。現在の舎利殿は昭和30年 (1955年) 再建のもので、1950年の放火で一度全焼しているため国宝指定ではない。この金閣寺の失火は三島由紀夫の「金閣寺」や水上勉の「金閣炎上」など文芸作品の題材にもなっていて有名。",
+    "description": "Rinzai sect shokoku-ji Temple in the kitayama mountain. Buddha's Holy kanzeon bosatsu (Hojo laid to rest). For the Hall of the current 0/1955 (1955) rebuilt, in 1950, arson once you have gutted is not designated as a national treasure. Kinkaku's fire on the theme of literary works such as the gold Pavilion ablaze in Yukio Mishima's kinkakuji and Tsutomu Minakami, famous.",
     "imageUrl": "https://gaijinpot.scdn2.secure.raxcdn.com/wp-content/uploads/sites/4/2014/06/golden_temple-1.jpg.jpg",
     "requiredTime": 0.5,
-    "created_at": "2016-11-06T03:16:05.000Z",
-    "updated_at": "2016-11-06T03:16:05.000Z",
+    "created_at": "2016-11-06T05:29:13.000Z",
+    "updated_at": "2016-11-06T05:29:13.000Z",
     "distance": 3.964143135241255,
     "bearing": 330
   }

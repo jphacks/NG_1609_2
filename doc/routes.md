@@ -7,41 +7,39 @@ Google Directions APIから経路を取得する.
 ```
 POST /api/getRoutes HTTP/1.1
 Accept: application/json
-Content-Length: 119
+Content-Length: 117
 Content-Type: application/json
 Host: www.example.com
 
-[
-  {
-    "geoList": [
-      {
-        "lat": 34.994856,
-        "lng": 135.785046
-      },
-      {
-        "lat": 35.03937,
-        "lng": 135.729243
-      },
-      {
-        "lat": 34.881833,
-        "lng": 137.003132
-      }
-    ]
-  }
-]
+{
+  "geoList": [
+    {
+      "lat": 34.994856,
+      "lng": 135.785046
+    },
+    {
+      "lat": 35.03937,
+      "lng": 135.729243
+    },
+    {
+      "lat": 34.881833,
+      "lng": 137.003132
+    }
+  ]
+}
 ```
 
 #### Response
 ```
 HTTP/1.1 200
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 95663
+Content-Length: 95943
 Content-Type: application/json; charset=utf-8
-ETag: W/"10dcaa70ddd5b853e62853f2a1b5e169"
+ETag: W/"224523a9bae269d3b371f86f77964708"
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: 3d750297-c4ed-4af9-9196-aff80ba2c067
-X-Runtime: 1.074322
+X-Request-Id: cc9efea2-550f-4edf-bf04-23f413b46aa9
+X-Runtime: 0.371802
 X-XSS-Protection: 1; mode=block
 
 [
@@ -62,7 +60,7 @@ X-XSS-Protection: 1; mode=block
         {
           "distance": {
             "text": "9.1 km",
-            "value": 9055
+            "value": 9054
           },
           "duration": {
             "text": "1 hour 51 mins",
@@ -1516,19 +1514,19 @@ X-XSS-Protection: 1; mode=block
             {
               "distance": {
                 "text": "0.2 km",
-                "value": 169
+                "value": 155
               },
               "duration": {
                 "text": "2 mins",
-                "value": 122
+                "value": 113
               },
               "end_location": {
-                "lat": 35.0214878,
-                "lng": 135.7424627
+                "lat": 35.0214854,
+                "lng": 135.7426474
               },
               "html_instructions": "Take the crosswalk",
               "polyline": {
-                "points": "szvtEcgo{XA`@I?E?yBHcCDED"
+                "points": "szvtEcgo{XI?EBiCFuBHEC"
               },
               "start_location": {
                 "lat": 35.0201035,
@@ -1538,12 +1536,35 @@ X-XSS-Protection: 1; mode=block
             },
             {
               "distance": {
-                "text": "0.1 km",
-                "value": 123
+                "text": "10 m",
+                "value": 10
               },
               "duration": {
                 "text": "1 min",
-                "value": 88
+                "value": 7
+              },
+              "end_location": {
+                "lat": 35.0215712,
+                "lng": 135.7426246
+              },
+              "html_instructions": "Take the crosswalk",
+              "polyline": {
+                "points": "icwtEqfo{XC?KD"
+              },
+              "start_location": {
+                "lat": 35.0214854,
+                "lng": 135.7426474
+              },
+              "travel_mode": "WALKING"
+            },
+            {
+              "distance": {
+                "text": "0.1 km",
+                "value": 126
+              },
+              "duration": {
+                "text": "2 mins",
+                "value": 90
               },
               "end_location": {
                 "lat": 35.0225894,
@@ -1551,11 +1572,11 @@ X-XSS-Protection: 1; mode=block
               },
               "html_instructions": "Take the crosswalk",
               "polyline": {
-                "points": "icwtEkeo{XE?IEkEJ"
+                "points": "ycwtEkfo{X?XkEJ"
               },
               "start_location": {
-                "lat": 35.0214878,
-                "lng": 135.7424627
+                "lat": 35.0215712,
+                "lng": 135.7426246
               },
               "travel_mode": "WALKING"
             },
@@ -1801,7 +1822,7 @@ X-XSS-Protection: 1; mode=block
         }
       ],
       "overview_polyline": {
-        "points": "y|qtEqow{XLfB@V[l@Mp@[IERICOz@Kf@IEUhA?LB??hAAhACXELoAhCi@rBSb@mBhDa@dA_BtH[bCAVF@AZG?CjB@fA@dAA`BCpAAJG@IxAKrAG\\e@jAYv@DBaAfDMl@a@`ESdCJD?BIHC\\HJM|@BxDSlAXLEPE??b@Av@@LHBKd@MEIB?hB@fCBbHI@@J?hC?dC@FqC?{@@ABCD?r@?TQ?@lBWvA?pCAXBj@?~DGF_E@?v@G?C\\CrF@x@@bF?PC?CjC@fC{@DeA@ArH?J_B?ClDE?A^Al@ADkCBm@?BtBUDA`@@hEa@?AH@PAxBE@?F@fAAd@MXQBAR@LeE`GMNo@|@qAhBqEnGs@bAcAxAUVKPaEzFS?KFALQVcC?qB@cE@QQ[?QR_BBaB@GGAKq@?WRwA?SJmID{D@uBAEEaBGqDEu@AYa@]?e@f@c@?wCAeCCA`@I?_CHcCDEDOEqEJgEBkGFADQ?CGcH?_FCeB@{BAqBJES}@DyANeCLgDt@qDt@oDn@{HzAsErBJh@@Xs@dCm@nBmBpFSh@a@n@mBjC{DpFOzA[`FMhA]`FE`AFt@PpD@XJ`A?d@OdD"
+        "points": "y|qtEqow{XLfB@V[l@Mp@[IERICOz@Kf@IEUhA?LB??hAAhACXELoAhCi@rBSb@mBhDa@dA_BtH[bCAVF@AZG?CjB@fA@dAA`BCpAAJG@IxAKrAG\\e@jAYv@DBaAfDMl@a@`ESdCJD?BIHC\\HJM|@BxDSlAXLEPE??b@Av@@LHBKd@MEIB?hB@fCBbHI@@J?hC?dC@FqC?{@@ABCD?r@?TQ?@lBWvA?pCAXBj@?~DGF_E@?v@G?C\\CrF@x@@bF?PC?CjC@fC{@DeA@ArH?J_B?ClDE?A^Al@ADkCBm@?BtBUDA`@@hEa@?AH@PAxBE@?F@fAAd@MXQBAR@LeE`GMNo@|@qAhBqEnGs@bAcAxAUVKPaEzFS?KFALQVcC?qB@cE@QQ[?QR_BBaB@GGAKq@?WRwA?SJmID{D@uBAEEaBGqDEu@AYa@]?e@f@c@?wCAeCCOB_GPICKD?XqEJgEBkGFADQ?CGcH?_FCeB@{BAqBJES}@DyANeCLgDt@qDt@oDn@{HzAsErBJh@@Xs@dCm@nBmBpFSh@a@n@mBjC{DpFOzA[`FMhA]`FE`AFt@PpD@XJ`A?d@OdD"
       },
       "summary": "鞍馬口通",
       "warnings": [
