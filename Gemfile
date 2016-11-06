@@ -5,6 +5,7 @@ gem 'google_maps_service'
 gem 'geocoder'
 gem 'microsoft_translator'
 
+
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.0'
@@ -15,6 +16,7 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "guard-rspec"
   gem "spring-commands-rspec"
+  gem 'dotenv-rails', :require => 'dotenv/rails-now'
 end
 
 group :development do
