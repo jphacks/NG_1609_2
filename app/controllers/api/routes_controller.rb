@@ -5,7 +5,7 @@ module Api
     def setup_google_map_api
       # Setup global parameters
       GoogleMapsService.configure do |config|
-        config.key = 'AIzaSyBlTfiKHGbtgsNKJ11ef0GMTNEv75TX6PM'
+        config.key = ENV['GOOGLE_MAP_API_SECRET']
         config.retry_timeout = 20
         config.queries_per_second = 10
       end
