@@ -7,7 +7,7 @@ class Location < ApplicationRecord
   before_save :translate_into_en
 
   def translate_into_en
-    translator = MicrosoftTranslator::Client.new('NG1609', 'MExu1gSyAmFagLIeP2mqIy0F4fZz/awWs/ueE5mwVEY=')
+    translator = MicrosoftTranslator::Client.new('NG1609', ENV['MS_TRANS_API_SECRET'])
     name = read_attribute(:name)
     description = read_attribute(:description)
     if translator.detect(name) == 'ja'
