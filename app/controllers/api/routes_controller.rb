@@ -17,7 +17,7 @@ module Api
     # POST /getRoutes
     def get_routes
       json = json_request
-      geo_list = json.dig(0, :geoList)
+      geo_list = json.dig(:geoList)
       routes = []
       geo_list.each_cons(2) do |start_location, end_location|
         route = @gmaps.directions(
