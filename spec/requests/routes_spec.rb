@@ -8,7 +8,7 @@ describe 'RoutesAPI', type: :request do
 
     let(:json_body) do
       # 清水寺 → 金閣寺 → 伏見稲荷神社
-      '[{"geoList":[{"lat":34.994856,"lng":135.785046},{"lat":35.03937,"lng":135.729243},{"lat":34.881833,"lng":137.003132}]}]'
+      '{"geoList":[{"lat":34.994856,"lng":135.785046},{"lat":35.03937,"lng":135.729243},{"lat":34.881833,"lng":137.003132}]}'
     end
 
     before do
