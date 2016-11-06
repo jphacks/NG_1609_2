@@ -4,8 +4,7 @@ class Location < ApplicationRecord
   geocoded_by :address
   reverse_geocoded_by :latitude, :longitude
   after_validation :geocode, :reverse_geocode
-  before_save :translate_into_en
-
+  # before_save :translate_into_en
 
   def translate_into_en
     translator = MicrosoftTranslator::Client.new('NG1609', 'MExu1gSyAmFagLIeP2mqIy0F4fZz/awWs/ueE5mwVEY=')

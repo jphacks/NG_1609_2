@@ -41,6 +41,10 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
+    autodoc (0.6.0)
+      actionpack
+      activesupport (>= 3.0.0)
+      rspec
     builder (3.2.2)
     byebug (9.0.6)
     capybara (2.10.1)
@@ -225,6 +229,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autodoc
   byebug
   capybara
   database_cleaner
